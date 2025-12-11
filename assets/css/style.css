@@ -30,6 +30,47 @@ a {
     color: white !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333333333333333%;
+}
+
 #main {
 
 }
@@ -283,6 +324,7 @@ a {
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
 }
 
 .place-buy-btn:hover {
@@ -398,4 +440,47 @@ a {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.contact-content {
+    margin-top:  48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info .ti-location-pin::before,
+.contact-info .ti-mobile::before,
+.contact-info .ti-email::before {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    outline: none;
+}
+
+.contact-form .form-submit-btn {
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
